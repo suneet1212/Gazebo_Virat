@@ -6,6 +6,7 @@
       <grid>0</grid>
       <background>0.7 0.7 0.7 1</background>
     </scene>
+
     <include>
         <uri>model://bot2</uri>
         <static>false</static>
@@ -14,12 +15,12 @@
     <include>
         <uri>model://tyre1</uri>
         <static>false</static>
-        <pose>4 4 0 0 0 0</pose>
+        <pose>1 1 0 0 0 0</pose>
     </include>
     <include>
         <uri>model://castors1</uri>
         <static>false</static>
-        <pose>7 7 0 0 0 0</pose>
+        <pose>1 0 0.5 0 0 0</pose>
     </include>
     <model name='course'>
       <static>1</static>
@@ -58,8 +59,8 @@
           </geometry>
           <material>
             <script>
-              <uri>model://turtlebot3_autorace/course/materials/scripts</uri>
-              <uri>model://turtlebot3_autorace/course/materials/textures</uri>
+              <uri>model://virat_course/course/materials/scripts</uri>
+              <uri>model://virat_course/course/materials/textures</uri>
               <name>course</name>
             </script>
           </material>
@@ -70,6 +71,7 @@
       </link>
       <pose frame=''>0 0 0 0 0 -1.54</pose>
     </model>
+
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
@@ -83,6 +85,7 @@
       </attenuation>
       <direction>-0.5 0.5 -1</direction>
     </light>
+ 
     <model name='ground2'>
       <pose frame=''>0 0 -0.1 0 -0 0</pose>
       <static>1</static>
